@@ -3179,7 +3179,6 @@ msha.gov
 m.slandr.net
 mstdn.social
 mswe1.org
-m-team.cc
 mthruf.com
 mtw.tl
 mtzfile.pw
@@ -4996,7 +4995,6 @@ uyghurpress.com
 uyghurstudies.org
 uygur.org
 uymaarip.com
-v2ex.com
 v2fly.org
 v2mm.tech
 v2ray.com
