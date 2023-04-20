@@ -12,4 +12,4 @@ netsh interface ipv4 set interface interface=WLAN metric=2
 :: Set WLAN interface primary DNS server to overture
 netsh interface ipv4 set dnsservers name=WLAN source=static address=127.0.0.1 register=primary validate=no
 :: Set WLAN interface alternative DNS server to 114.114.114.114 which is useful when overture not started
-netsh interface ipv4 add dnsservers name=WLAN address=114.114.114.114 index=2 validate=no
+:: netsh interface ipv4 add dnsservers name=WLAN address=114.114.114.114 index=2 validate=no
