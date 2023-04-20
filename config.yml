@@ -48,14 +48,14 @@ ipNetworkFile:
   alternative:
 domainFile:
   primary: '.\\china_list.txt'
-  alternative: ./gfw_list.txt
+  alternative: '.\\gfw_list.txt'
   matcher: suffix-tree
 hostsFile:
   hostsFile: 'C:\\Windows\\System32\\drivers\\etc\\hosts'
   finder: full-map
-minimumTTL: 0
+minimumTTL: 60
 domainTTLFile:
-cacheSize: 0
+cacheSize: 1024
 cacheRedisUrl:
 cacheRedisConnectionPoolSize:
 rejectQType:
