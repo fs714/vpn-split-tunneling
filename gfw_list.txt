@@ -1,3 +1,4 @@
+
 0914.global.ssl.fastly.net
 0rz.tw
 1000giri.net
@@ -931,6 +932,7 @@ clipfish.de
 clips4sale.com
 cloakpoint.com
 cloudflare.com
+cloudflare.net
 cloudfront.net
 cloudfunctions.net
 cloud.mail.ru
@@ -4048,6 +4050,7 @@ see.xxx
 seezone.net
 sejie.com
 sellclassics.com
+send.firefox.com
 sendsmtp.com
 sendspace.com
 sensortower.com
@@ -4491,6 +4494,7 @@ tgfcer.com
 tgstat.com
 thaicn.com
 theatrum-belli.com
+theb.ai
 thebcomplex.com
 theblemish.com
 thebobs.com
