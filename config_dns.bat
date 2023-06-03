@@ -6,16 +6,16 @@ mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :st",
 
 :st
 :: Restore WLAN interface metric
-netsh interface ipv4 set interface interface=WLAN metric=auto
+:: netsh interface ipv4 set interface interface=WLAN metric=auto
 :: Set WLAN interface primary DNS server to DHCP
-netsh interface ipv4 set dnsservers name=WLAN source=dhcp
+:: netsh interface ipv4 set dnsservers name=WLAN source=dhcp
 :: Kill overture process
 wmic process where (commandline like "%%overture-windows-amd64.exe%%" and not name="wmic.exe") delete
 
 :: Start overture service
 mshta vbscript:createobject("shell.application").shellexecute("overture-windows-amd64.exe","","%~dp0","runas",0)(window.close)
 :: Set WLAN interface metric to higher priority, then configured DNS server could be used by system firstly
-netsh interface ipv4 set interface interface=WLAN metric=2
+netsh interface ipv4 set interface interface=WLAN metric=1
 :: Set WLAN interface primary DNS server to overture
 netsh interface ipv4 set dnsservers name=WLAN source=static address=127.0.0.1 register=primary validate=no
 :: Set WLAN interface alternative DNS server to 114.114.114.114 which is useful when overture not started

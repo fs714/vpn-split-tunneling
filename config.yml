@@ -3,8 +3,8 @@ debugHTTPAddress: '127.0.0.1:5555'
 dohEnabled: false
 primaryDNS:
   - name: dns1
-    address: '114.114.114.114:53'
-    protocol: udp
+    address: '119.29.29.29'
+    protocol: tcp
     socks5Address:
     timeout: 2
     ednsClientSubnet:
@@ -12,8 +12,8 @@ primaryDNS:
       externalIP:
       noCookie: true
   - name: dns2
-    address: '223.5.5.5:53'
-    protocol: udp
+    address: '114.114.114.114'
+    protocol: tcp
     socks5Address:
     timeout: 2
     ednsClientSubnet:

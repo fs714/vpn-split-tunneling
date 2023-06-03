@@ -3,7 +3,8 @@
 ver|find "5.">nul&&goto :st
 mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :st","","runas",1)(window.close)&goto :eof
 :st
-netsh interface ipv4 set interface interface=WLAN metric=2
+netsh interface ipv4 set interface interface=WLAN metric=1
+netsh interface ipv4 set interface interface=12 metric=10
 
 copy "%~0" "%windir%\system32\"
 cd /d %~dp0

@@ -5,8 +5,10 @@ ver|find "5.">nul&&goto :st
 mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :st","","runas",1)(window.close)&goto :eof
 
 :st
-netsh interface ipv4 set interface interface=WLAN metric=2
+netsh interface ipv4 set interface interface=WLAN metric=1
+netsh interface ipv4 set interface interface=12 metric=10
 netsh interface ipv4 set dnsservers name=WLAN source=dhcp
+netsh interface ipv4 set dnsservers name=12 source=dhcp
 wmic process where (commandline like "%%overture-windows-amd64.exe%%" and not name="wmic.exe") delete
 
 copy "%~0" "%windir%\system32\"
